@@ -1,7 +1,7 @@
 package validation.bean;
 
 import validation.annotation.Check;
-import validation.annotation.Field;
+import validation.annotation.Validation;
 
 public class FirstLevel {
 
@@ -17,7 +17,7 @@ public class FirstLevel {
 	public void setSecondLevel(SecondLevel secondLevel) {
 		this.secondLevel = secondLevel;
 	}
-	@Field(name="field1")
+	@Validation(name="field1")
 	public String getField1() {
 		return field1;
 	}
@@ -31,7 +31,7 @@ public class FirstLevel {
 	public void setField2(String field2) {
 		this.field2 = field2;
 	}
-	@Field(name="field3")
+	@Validation(name="field3")
 	public Double getField3() {
 		return field3;
 	}

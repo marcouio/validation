@@ -1,6 +1,6 @@
 package validation.bean;
 
-import validation.annotation.Field;
+import validation.annotation.Validation;
 
 public class ThirdLevel {
 
@@ -14,7 +14,7 @@ public class ThirdLevel {
 	public void setField7(String field7) {
 		this.field7 = field7;
 	}
-	@Field(name="field8")
+	@Validation(name="field8")
 	public String getField8() {
 		return field8;
 	}
